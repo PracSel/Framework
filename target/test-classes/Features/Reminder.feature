@@ -1,5 +1,4 @@
-Feature: As busy tester,I should be able to create reminders
-so that i can plan my day and not forget key tasks.
+Feature: As a busy tester,I should be able to create reminders so that i can plan my day and not forget key tasks.
 
 Scenario: Creating Single reminder task
 

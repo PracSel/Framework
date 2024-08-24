@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
+import com.google.common.util.concurrent.Uninterruptibles;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -37,6 +39,7 @@ public class ReminderStepDefinition
 		System.out.println("User creating reminder");
 		System.out.println(driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), "TodoMVC: Vue");
+		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(3));
 		driver.findElement(By.xpath("/html/body/section/header/input")).sendKeys(string);
 		driver.findElement(By.xpath("/html/body/section/header/input")).sendKeys(Keys.ENTER);
 	}
@@ -45,7 +48,7 @@ public class ReminderStepDefinition
 	public void he_should_see_added_to_the_reminder_list(String string) 
 	{
 		System.out.println("User should he reminder added");
-		
+		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(3));
 		String Remindername =driver.findElement(By.xpath("/html/body/section/main/ul/li/div[1]/label")).getText();
 		Assert.assertEquals(Remindername, string, "Reminder Added isn't present in the list");
 	}
@@ -54,9 +57,11 @@ public class ReminderStepDefinition
 	public void he_should_see_a_total_of_reminder_added_to_the_list(Integer int1) 
 	{
 		System.out.println("Reminder count increased by 1");
-		
+		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(3));
 		int Size =driver.findElements(By.xpath("/html/body/section/main/ul/li")).size();
 		Assert.assertEquals(Size,1,"Total Reminder Added is not 1");
+		Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(1));
+		driver.quit();
 	}
 
 
