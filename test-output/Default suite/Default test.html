@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 24 16:39:35 SGT 2024</td>
+<td>Started on:</td><td>Sun Sep 01 15:08:15 SGT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14959 ms)</td>
+<tr><td>Total time:</td><td>58 seconds (58299 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,39 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying reminders are maintained in list, even on browser refresh", "As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"</td>
+<td><div><pre>java.lang.AssertionError: Total Reminder Added is not 1 expected [4] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1407)
+	at StepDefinitions.ReminderStepDefinition.he_should_see_a_total_of_reminders_added_to_the_list(ReminderStepDefinition.java:52)
+	at ✽.he should see a total of 4 reminders added to the list(file:///C:/Users/Harsh%20Singh/Desktop/New%20folder/AutomationScenario/src/test/resources/Features/Reminder.feature:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1064040618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064040618'><pre>java.lang.AssertionError: Total Reminder Added is not 1 expected [4] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1407)
+	at StepDefinitions.ReminderStepDefinition.he_should_see_a_total_of_reminders_added_to_the_list(ReminderStepDefinition.java:52)
+	at ✽.he should see a total of 4 reminders added to the list(file:///C:/Users/Harsh%20Singh/Desktop/New%20folder/AutomationScenario/src/test/resources/Features/Reminder.feature:35)
+</pre></div></td>
+<td>8</td>
+<td>TestRunner.CucumberTestRunner@385c9627</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +109,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating Single reminder task", "As a busy tester,I should be able to create reminders so that i can plan my day and not forget key tasks."</td>
+<td title='TestRunner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Completing multiple reminder tasks", "As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"</td>
 <td></td>
-<td>14</td>
-<td>TestRunner.CucumberTestRunner@2f4948e4</td></tr>
+<td>28</td>
+<td>TestRunner.CucumberTestRunner@385c9627</td></tr>
+<tr>
+<td title='TestRunner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Completing a single reminder task", "As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"</td>
+<td></td>
+<td>20</td>
+<td>TestRunner.CucumberTestRunner@385c9627</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,43 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T16:39:35 SGT" name="Default suite" finished-at="2024-08-24T16:39:50 SGT" duration-ms="14959">
+  <suite started-at="2024-09-01T15:08:15 SGT" name="Default suite" finished-at="2024-09-01T15:09:13 SGT" duration-ms="58299">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@2f4948e4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-08-24T16:39:35 SGT" name="Default test" finished-at="2024-08-24T16:39:50 SGT" duration-ms="14959">
+    <test started-at="2024-09-01T15:08:15 SGT" name="Default test" finished-at="2024-09-01T15:09:13 SGT" duration-ms="58299">
       <class name="TestRunner.CucumberTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.CucumberTestRunner@2f4948e4]" started-at="2024-08-24T16:39:35 SGT" name="setUpClass" finished-at="2024-08-24T16:39:35 SGT" duration-ms="430" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" started-at="2024-09-01T15:08:15 SGT" name="setUpClass" finished-at="2024-09-01T15:08:15 SGT" duration-ms="364" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@d5af0a5]]>
+                <![CDATA[org.testng.TestRunner@2703d91]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@2f4948e4]" started-at="2024-08-24T16:39:35 SGT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-24T16:39:49 SGT" duration-ms="14447" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" started-at="2024-09-01T15:08:15 SGT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-01T15:08:36 SGT" duration-ms="20226" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Creating Single reminder task"]]>
+                <![CDATA["Completing a single reminder task"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["As a busy tester,I should be able to create reminders so that i can plan my day and not forget key tasks."]]>
+                <![CDATA["As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.CucumberTestRunner@2f4948e4]" started-at="2024-08-24T16:39:49 SGT" name="tearDownClass" finished-at="2024-08-24T16:39:50 SGT" duration-ms="30" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" started-at="2024-09-01T15:08:36 SGT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-01T15:09:05 SGT" duration-ms="28928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Completing multiple reminder tasks"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" started-at="2024-09-01T15:09:05 SGT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-01T15:09:13 SGT" duration-ms="8723" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verifying reminders are maintained in list, even on browser refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a obediant tester, I should be able to strike out completed reminders, so that I see my accomplishment"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Total Reminder Added is not 1 expected [4] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Total Reminder Added is not 1 expected [4] but found [0]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1407)
+at StepDefinitions.ReminderStepDefinition.he_should_see_a_total_of_reminders_added_to_the_list(ReminderStepDefinition.java:52)
+at ✽.he should see a total of 4 reminders added to the list(file:///C:/Users/Harsh%20Singh/Desktop/New%20folder/AutomationScenario/src/test/resources/Features/Reminder.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.CucumberTestRunner@385c9627]" started-at="2024-09-01T15:09:13 SGT" name="tearDownClass" finished-at="2024-09-01T15:09:13 SGT" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
